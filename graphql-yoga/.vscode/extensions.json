@@ -1,0 +1,47 @@
+{
+    "recommendations": [
+      "VisualStudioExptTeam.vscodeintellicode",
+      "vscode-icons-team.vscode-icons", //ファイルにアイコンを追加してエクスプローラーを見やすくする
+
+      "mhutchie.git-graph", // git branch が見やすくなる
+      "eamodio.gitlens",// git brame とか表示するようになる
+
+      "aaron-bond.better-comments",
+      "mechatroner.rainbow-csv",
+      "mikestead.dotenv",
+      "oderwat.indent-rainbow",
+      "vincaslt.highlight-matching-tag",
+
+      "christian-kohler.path-intellisense",//パスの入力を補完
+      "shardulm94.trailing-spaces",//行末の空白文字を可視化
+      "mosapride.zenkaku", //全角の空白文字を可視化
+
+      // React 関連
+      // ReactComponent を Previewできるようになる
+      "zenclabs.reactpreview",
+
+      // TypeScript 関連のプラグイン
+      "pmneo.tsimporter",
+      "mike-co.import-sorter",
+      "stringham.move-ts",
+      "ionutvmi.path-autocomplete",
+
+      // TypeScript 検証(eslint) 整形(prettier) 関連のプラグイン
+      "dbaeumer.vscode-eslint",
+      "esbenp.prettier-vscode",
+
+      // "jpoissonnier.vscode-styled-components",
+      // "hex-ci.stylelint-plus",
+      // js のテストツール(jest) のプラグイン
+      "Orta.vscode-jest",
+
+      // 便利プラグイン
+      // markdown を書く際に便利なプラグイン
+      "shd101wyy.markdown-preview-enhanced",
+      // mermaid を markdown-preview で使えるようにするプラグイン
+      "bierner.markdown-mermaid",
+      // drawio で 設計図等を作る際に便利なプラグイン
+      "hediet.vscode-drawio"
+
+    ]
+  }

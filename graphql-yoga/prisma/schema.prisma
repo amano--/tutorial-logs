@@ -10,16 +10,23 @@ generator client {
 
 // 3
 model Link {
-  id          Int      @id @default(autoincrement())
-  createdAt   DateTime @default(now())
+  id          Int       @id @default(autoincrement())
+  createdAt   DateTime  @default(now())
   description String
   url         String
   comments    Comment[]
 }
 
 model Comment {
-  id        Int      @id @default(autoincrement())
-  body      String
-  link      Link?    @relation(fields: [linkId], references: [id])
-  linkId    Int?
+  id     Int    @id @default(autoincrement())
+  body   String
+  link   Link?  @relation(fields: [linkId], references: [id])
+  linkId Int?
+}
+
+// [prisma の ER 図を mermaid 形式で吐くには ](https://zenn.dev/terrierscript/articles/2022-03-25-prisma-er-mermaid)
+generator erd {
+  provider = "prisma-erd-generator"
+  theme    = "forest"
+  output   = "scheme.md"
 }
